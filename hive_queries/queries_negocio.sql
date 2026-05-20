@@ -43,7 +43,7 @@ WHERE Name IN ('Bitcoin', 'Ethereum', 'Solana')
 GROUP BY Name, Year, Month
 ORDER BY Name, Year, Month;
 
--- P5: Rendimiento promedio por mes del anio
+-- P5: Rendimiento promedio por mes del año
 SELECT
     Month,
     ROUND(AVG(CAST(daily_return AS DOUBLE)), 4) AS rendimiento_pct,
